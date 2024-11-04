@@ -2,70 +2,143 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/logo-dark.png",
+    "light": "/logo/logo-light.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/fincra-favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#7436ef",
+    "light": "#7436ef",
+    "dark": "#7436ef",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#7436ef",
+      "to": "#FFFFFF"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@fincra.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Fincra Dashboard",
+    "url": "https://app.fincra.com"
   },
   "tabs": [
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "Libraries and SDKs",
+      "url": "libraries-and-sdks"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
+      "name": "Developer Hub",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "url": "https://join.slack.com/t/fincrahub/shared_invite/zt-2qj5a4zkl-JJwlW2L~YpPNFtPBSxdM4g"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://blog.fincra.com/"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Home",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        {
+          "group": "Get Started",
+          "pages": [
+            {
+              "group": "Collecting Payments",
+              "pages": [
+                "docs/get-started/collecting-payments/checkout-popup",
+                "docs/get-started/collecting-payments/checkout-redirect",
+                "docs/get-started/collecting-payments/direct-charge",
+                "docs/get-started/collecting-payments/direct-debit",
+                "docs/get-started/collecting-payments/multicurrency-account",
+                "docs/get-started/collecting-payments/payment-links",
+                "docs/get-started/collecting-payments/virtual-account"
+              ],
+              "icon": "credit-card"
+            },
+            {
+              "group": "Making Payouts",
+              "pages": [
+                "docs/get-started/making-payouts/payout-api"
+              ],
+              "icon": "paper-plane"
+            },
+            "docs/get-started/supported-currencies-and-banks"
+          ],
+          "icon": "flag-checkered"
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Products",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        {
+          "group": "Pay-ins (Deposits)",
+          "pages": [
+            "docs/payin/overview"
+          ],
+          "icon": "money-bill-wave"
+        },
+        {
+          "group": "Pay-outs (Disbursements)",
+          "pages": [
+            "docs/payout/overview"
+          ],
+          "icon": "paper-plane"
+        },
+        {
+          "group": "Conversions",
+          "pages": [
+            "docs/conversion/overview"
+          ],
+          "icon": "money-bill-transfer"
+        },
+        {
+          "group": "Identity Management",
+          "pages": [
+            "docs/identity-management/overview"
+          ],
+          "icon": "user-shield",
+          "iconType": "regular"
+        }
+      ]
+    },
+    {
+      "group": "Learn More",
+      "pages": [
+        {
+          "group": "FAQ's",
+          "pages": [
+            "docs/learn-more/faqs/multicurrency-account-faqs"
+          ],
+          "icon": "clipboard-question"
+        },
+        {
+          "group": "Use Cases",
+          "pages": [
+            "docs/learn-more/use-cases/overview"
+          ],
+          "icon": "chalkboard-user"
+        },
+        {
+          "group": "Demos",
+          "pages": [
+            "docs/learn-more/demos/overview"
+          ],
+          "icon": "desktop"
+        }
       ]
     },
     {
@@ -81,11 +154,23 @@
         "api-reference/endpoint/create",
         "api-reference/endpoint/delete"
       ]
+    },
+    {
+      "group": "Libraries",
+      "pages": [
+        "libraries-and-sdks/introduction"
+      ]
+    },
+    {
+      "group": "SDKs",
+      "pages": [
+        "libraries-and-sdks/introduction"
+      ]
     }
   ],
   "footerSocials": {
     "x": "https://x.com/mintlify",
     "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "linkedin": "https://www.linkedin.com/company/mintsearch"
   }
 }
